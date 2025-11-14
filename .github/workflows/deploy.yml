@@ -31,7 +31,7 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: us-east-1
 
-      - name: Upload files to S3
+      - name: Upload files to s3
         run: |
-          aws s3 cp . S3://project2.satisfactionplus.online/ --recursive
+          aws s3 cp . s3://project2.satisfactionplus.online/ --recursive
 
