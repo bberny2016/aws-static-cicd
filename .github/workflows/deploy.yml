@@ -33,5 +33,5 @@ jobs:
 
       - name: Upload files to S3
         run: |
-          aws S3 cp . S3://project2.satisfactionplus.online/ --recursive
+          aws s3 cp . S3://project2.satisfactionplus.online/ --recursive
 
